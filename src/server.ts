@@ -2,8 +2,8 @@
 // console.log(firstName);
 
 function login(username: string): boolean {
-  console.log(username);
+    console.log(username);
 
-  return true;
+    return true;
 }
-login("dravid");
+login('dravid');
