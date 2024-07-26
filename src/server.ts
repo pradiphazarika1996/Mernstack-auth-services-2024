@@ -4,6 +4,10 @@
 function login(username: string): string {
     // console.log(username);
 
-    return username;
+    const user = {
+        name: 'pradip',
+    };
+    const name = user['name'];
+    return username + name;
 }
 login('dravid');
