@@ -1,33 +1,36 @@
 {
-    "name": "auth-service",
-    "version": "1.0.0",
-    "description": "A user management service",
-    "main": "index.js",
-    "scripts": {
-        "dev": "node src/server.ts",
-        "format:check": "prettier . --check",
-        "format:fix": "prettier . --write",
-        "lint:fix": "eslint . --fix",
-        "lint": "eslint . ",
-        "prepare": "husky"
-    },
-    "author": "Pradip Hazarika",
-    "license": "ISC",
-    "devDependencies": {
-        "@types/node": "^20.14.10",
-        "@typescript-eslint/eslint-plugin": "^7.17.0",
-        "@typescript-eslint/parser": "^7.17.0",
-        "eslint": "^8.57.0",
-        "eslint-config-prettier": "^9.1.0",
-        "husky": "^9.1.2",
-        "lint-staged": "^15.2.7",
-        "prettier": "3.3.3",
-        "typescript": "^5.5.3"
-    },
-    "lint-staged": {
-        "*.ts": [
-            "npm run lint:fix",
-            "npm run format:fix"
-        ]
-    }
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "A user management service",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint:fix": "eslint . --fix",
+    "lint": "eslint . ",
+    "prepare": "husky"
+  },
+  "author": "Pradip Hazarika",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.2",
+    "lint-staged": "^15.2.7",
+    "prettier": "3.3.3",
+    "typescript": "^5.5.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run lint:fix",
+      "npm run format:fix"
+    ]
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }
